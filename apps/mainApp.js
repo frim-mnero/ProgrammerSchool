@@ -18,6 +18,6 @@ for(let i = 0;i<=questBtns.length;i++){
 }
 for(let i = 0;i>imgArrowTop.length;i++){
     imgArrowTop[i].addEventListener('click',function(){
-        console.log('click');
+        //тут изменено
     });
 }

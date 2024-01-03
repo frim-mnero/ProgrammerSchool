@@ -1,23 +1,7 @@
-const questBtns = document.querySelectorAll(".imgArrowBottom");
-const imgArrowTop = document.querySelectorAll(".imgArrowTop");
-const questBtnBtn = document.querySelectorAll(".questBtn");
-const questBtns2 = document.querySelectorAll(".questBtn2");
-const questItem = document.querySelectorAll(".quest-item");
-const quesItemDescr2 = document.querySelectorAll('.quest-item-descr2');
+const imgArrowBottom = document.querySelectorAll(".imgArrowBottom");
+const questBtn = document.querySelectorAll(".questBtn");
 
-console.log(questBtns);
+questBtn.onclick = ()=>{
+    alert('clicl');
+}
 
-for(let i = 0;i<=questBtns.length;i++){
-    questBtns[i].addEventListener('click',function(){
-        questItem[i].classList.add('quest-item-more');
-        quesItemDescr2[i].classList.remove('hiddener');
-        questBtnBtn[i].classList.add('hiddener');
-        questBtns2[i].classList.remove('hiddener');
-    });
-    
-}
-for(let i = 0;i>imgArrowTop.length;i++){
-    imgArrowTop[i].addEventListener('click',function(){
-        questItem[i].classList.remove('quest-item-more');
-    });
-}

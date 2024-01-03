@@ -18,6 +18,6 @@ for(let i = 0;i<=questBtns.length;i++){
 }
 for(let i = 0;i>imgArrowTop.length;i++){
     imgArrowTop[i].addEventListener('click',function(){
-        //тут изменено
+        questItem[i].classList.remove('quest-item-more');
     });
 }
